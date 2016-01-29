@@ -24,18 +24,7 @@ changes.
 - Use the 'fork, clone, and pull request' model to submit assignments
 - Un-initialize a git repository
 
-## Resources
-
-* [Interactive Git Cheetsheet](http://ndpsoftware.com/git-cheatsheet.html)
-* [Syncing with Git](https://www.atlassian.com/git/tutorials/syncing/)
-* [Github Guides](https://guides.github.com)
-* [Github Training](https://training.github.com/kit/)
-* [Git Immersion - Interactive Course](http://gitimmersion.com/lab_05.html)
-* [Pro Git](http://git-scm.com/book/en/v2) - An in-depth free PDF book for those wanting to understand git deeper
-* [GitUp - Interactive Commit Visualizer](http://gitup.co)
-
-
-## Outline
+## Framing
 
 ### The Purpose of Version Control (10 minutes)
 
@@ -49,6 +38,10 @@ Answer the following questions yourself, then turn to your neighbor and discuss 
 - What was frustrating about that experience?
 - How did it work if you were collaborating with other people?
 
+
+**So what is Git, and why does it help us?**
+Above all else, Git is a fast version control system, that allows you to efficiently handle projects large and small.
+
 Here are some problems we face as developers, and how git solves them:
 
 **Reverting to past versions**
@@ -61,7 +54,7 @@ at that point, or even start building off that version.
 **Keeping track of what each version 'meant'**
 
 Every commit has a description (commit message), which allows us to describe
-what changed to make that commit. This is usually a description of what features
+what changes were made between the current and previous commit. This is usually a description of what features
 were added or what bugs were fixed.
 
 Additionally, git supports tagging, which allows us to mark a specific commit
@@ -82,12 +75,15 @@ Git allows us to easily see these changes (called a `diff`) for any given commit
 Most software is developed on a team. Thus, it's important for us to share our
 changes so that others can incorporate them into the version they are working on.
 
+**Separating features**
+Git allows us to "branch" away from the "master" collection of files to work on separate features. Typically the master will be the collections of files from which your actual deployed app will read. If you want to work on a new feature for your app, but are unsure that it will work, would you risk adding code to that master branch if there is a chance everything crashes? probably not, so instead we branch.  As an example, when Facebook is working on a new feature (think news feed, or that ridiculous trending section), they don't want the site to crash because of an error caused by that new feature.  Therefore, they would likely work on that through another version of their code, and then merge it with the master once everything has been tested and works.
+<!--
 **Collaborating / discussing changes**
 
 In addition to just sharing changes, it is useful to have discussions on those
 changes (again for code review). Git doesn't support this out of the box, but
 Github does provide this feature. For example, you can add comments to a changed
-line or lines in a given commit.
+line or lines in a given commit. -->
 
 **Fearlessness in making changes**
 
@@ -150,7 +146,7 @@ The git commit command commits the staged snapshot to the project history. Commi
 #### Docs Dive (5 minutes)
 
 Students should briefly look over provided reading on [Git Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
-and prepared to discuss key takeaways.
+and prepare to discuss key takeaways.
 
 #### Terms and Concepts (Remotes)
 
@@ -175,11 +171,12 @@ See diagram of the clone/push/pull process.
 
 1. make sure you are in the resume directory and you have nothing to commit.
 2. ensure you have at least one commit
-3. give the repo a name and description, and ensure it's public
-4. add repo as a remote and push to remote
-5. open the repo on github, and explore the code there
-6. make a change locally, commit it, and sync it
-7. open the repo on github, and note that the changes have synced
+3. create a github repo and follow the steps provided
+4. give the repo a name and description, and ensure it's public
+5. add repo as a remote and push to remote
+6. open the repo on github, and explore the code there
+7. make a change locally, commit it, and sync it
+8. open the repo on github, and note that the changes have synced
 
 ### Break (5 minutes)
 
@@ -254,8 +251,11 @@ Once linked, you can just run `git push` to push master branch to master branch
 
 ## Homework
 
+### 1. Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions
+there.
+<!-- 
 ### 1. Personal Resume Page
-[Part 2 of the HTML Resume](https://github.com/ga-dc/html_resume)
+[Part 2 of the HTML Resume](https://github.com/ga-dc/html_resume) -->
 
 ### 2. Fork and Clone the Curriculum Repo
 
@@ -283,4 +283,15 @@ completeness: 5
 * Create a blog site using jekyll (hosted using a separate repo at **your_github_username*.github.io/blog, this is called a 'project' rep)
 * Register for a custom domain name (usually $6 - $10 a year), and associate it with your github project site
 
-You'll find instructions that will help at the bottom of the [github pages guide](https://pages.github.com).
+You'll find instructions that will help at the bottom of the [github pages guide](https://pages.github.com).**
+
+
+## Resources
+
+* [Interactive Git Cheetsheet](http://ndpsoftware.com/git-cheatsheet.html)
+* [Syncing with Git](https://www.atlassian.com/git/tutorials/syncing/)
+* [Github Guides](https://guides.github.com)
+* [Github Training](https://training.github.com/kit/)
+* [Git Immersion - Interactive Course](http://gitimmersion.com/lab_05.html)
+* [Pro Git](http://git-scm.com/book/en/v2) - An in-depth free PDF book for those wanting to understand git deeper
+* [GitUp - Interactive Commit Visualizer](http://gitup.co)
