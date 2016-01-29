@@ -192,13 +192,12 @@ to HW submission.
 
 ![Git Process Diagram](./git06.jpg)
 
-#### Exercise 3: Fork, Clone and create a Pull Request
-
-Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions
-there.
-
 ![Git Process Diagram](./git.gif)
 
+<!-- #### Exercise 3: Fork, Clone and create a Pull Request
+Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions
+there.
+ -->
 
 ### Closing
 
@@ -251,9 +250,8 @@ Once linked, you can just run `git push` to push master branch to master branch
 
 ## Homework
 
-### 1. Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions
-there.
-<!-- 
+### 1. Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions there.
+<!--
 ### 1. Personal Resume Page
 [Part 2 of the HTML Resume](https://github.com/ga-dc/html_resume) -->
 
