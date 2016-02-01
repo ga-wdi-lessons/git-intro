@@ -208,7 +208,9 @@ What if you staged some work and realize you don't want that saved? Or, what if 
 3. try reverting that file back to before it was staged, what happens?
   * ```git reset head```
 4. make a new change to your resume.txt file, and this time ```add``` and ```commit``` it
-5. 
+5. can you still revert with the same command?
+6. try ```git reset head^```
+  * ***note, be VERY careful when reverting! you cannot undo if you go back a commit***
 
 
 ### Closing
