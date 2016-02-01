@@ -266,9 +266,7 @@ Once linked, you can just run `git push` to push master branch to master branch
 ## Homework
 
 ### 1. Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions there.
-<!--
-### 1. Personal Resume Page
-[Part 2 of the HTML Resume](https://github.com/ga-dc/html_resume) -->
+<!-- ### 1. Personal Resume Page [Part 2 of the HTML Resume](https://github.com/ga-dc/html_resume) -->
 
 ### 2. Fork and Clone the Curriculum Repo
 
