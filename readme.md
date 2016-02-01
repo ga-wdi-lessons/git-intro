@@ -31,7 +31,7 @@ changes.
 Think about how you've managed tracking changes to a file over time (perhaps
 with other people).
 
-#### THINK PAIR SHARE (5 Minutes)
+#### THINK PAIR SHARE (10 Minutes)
 Answer the following questions yourself, then turn to your neighbor and discuss your answers. We will then go around and compare.
 - What does version control mean to you?
 - When have you used a form version control previously?
@@ -104,7 +104,8 @@ concepts of how git works (and associated terms).
 * **working tree** - the folder (and it's files and sub-folders, that are in the repository)
 * **commit** - a snapshot of the working tree at a giving time (along with a message of what changed)
 * **the index** - a staging area where we list changes we want to commit
-* **HEAD** - what is currently checked out.
+* **HEAD** - what is currently checked out
+* **status** - what files have changed, and what step are they in.
 
 See diagram of the various components of a git repository, and how
 they relate.
@@ -198,6 +199,17 @@ to HW submission.
 Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions
 there.
  -->
+
+#### Exercise 3: Reset your work
+What if you staged some work and realize you don't want that saved? Or, what if you've gone even further and committed something, but want tor evert back to the last commit?
+
+1. make a few changes to your resume.txt file
+2. stage those files, but do NOT commit
+3. try reverting that file back to before it was staged, what happens?
+  * ```git reset head```
+4. make a new change to your resume.txt file, and this time ```add``` and ```commit``` it
+5. 
+
 
 ### Closing
 
