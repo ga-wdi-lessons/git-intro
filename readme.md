@@ -205,11 +205,12 @@ What if you staged some work and realize you don't want that saved? Or, what if 
 
 1. make a few changes to your resume.txt file
 2. stage those files, but do NOT commit
-3. try reverting that file back to before it was staged, what happens?
+3. check your ```git status```
+4. try reverting that file back to before it was staged, what happens when you run ```git status``` again?
   * ```git reset head```
-4. make a new change to your resume.txt file, and this time ```add``` and ```commit``` it
-5. can you still revert with the same command?
-6. try ```git reset head^```
+5. make a new change to your resume.txt file, and this time ```add``` and ```commit``` it
+6. can you still revert with the same command?
+7. try ```git reset head^```
   * ***note, be VERY careful when reverting! you cannot undo if you go back a commit***
 
 
@@ -307,3 +308,4 @@ You'll find instructions that will help at the bottom of the [github pages guide
 * [Git Immersion - Interactive Course](http://gitimmersion.com/lab_05.html)
 * [Pro Git](http://git-scm.com/book/en/v2) - An in-depth free PDF book for those wanting to understand git deeper
 * [GitUp - Interactive Commit Visualizer](http://gitup.co)
+* [Practice with Git](https://github.com/grayghostvisuals/practice-git)
