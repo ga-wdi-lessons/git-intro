@@ -1,0 +1,8 @@
+### The Purpose of Version Control (10 minutes; 00:00-00:10)
+#### THINK PAIR SHARE (10 Minutes; 00:10-00:20)
+### Core Concepts of Git Repositories (40 minutes; 00:20-01:00)
+### Break (10 minutes; 01:00-01:10)
+### Remote Repositories and Github (30 minutes; 01:10-01:40)
+#### Docs Dive (5 minutes; 01:40-01:45)
+### Break (10 minutes; 01:45-01:55)
+### Forking & Pull Requests (30 minutes; 01:55-02:25)

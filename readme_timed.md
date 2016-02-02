@@ -26,12 +26,12 @@ changes.
 
 ## Framing
 
-### The Purpose of Version Control (10 minutes)
+### The Purpose of Version Control (10 minutes; 00:00-00:10)
 
 Think about how you've managed tracking changes to a file over time (perhaps
 with other people).
 
-#### THINK PAIR SHARE (10 Minutes)
+#### THINK PAIR SHARE (10 Minutes; 00:10-00:20)
 Answer the following questions yourself, then turn to your neighbor and discuss your answers. We will then go around and compare.
 - What does version control mean to you?
 - When have you used a form of version control previously?
@@ -92,7 +92,7 @@ refactoring (rewriting) existing code. Because git makes it easy to go back to a
 known good state, we can experiment without worrying that we'll be unable to
 undo the experimental work.
 
-### Core Concepts of Git Repositories (40 minutes)
+### Core Concepts of Git Repositories (40 minutes; 00:20-01:00)
 
 This section aims to introduce the core use of git, as well as the fundamental
 concepts of how git works (and associated terms).
@@ -140,11 +140,11 @@ Instead of committing all of the changes you've made since the last commit, the 
 The git commit command commits the staged snapshot to the project history. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicity ask it to. Along with git add, this is one of the most important Git commands.
 
 
-### Break (10 minutes)
+### Break (10 minutes; 01:00-01:10)
 
-### Remote Repositories and Github (30 minutes)
+### Remote Repositories and Github (30 minutes; 01:10-01:40)
 
-#### Docs Dive (5 minutes)
+#### Docs Dive (5 minutes; 01:40-01:45)
 
 Students should briefly look over provided reading on [Git Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 and prepare to discuss key takeaways.
@@ -179,9 +179,9 @@ See diagram of the clone/push/pull process.
 7. make a change locally, commit it, and sync it
 8. open the repo on github, and note that the changes have synced
 
-### Break (10 minutes)
+### Break (10 minutes; 01:45-01:55)
 
-### Forking & Pull Requests (30 minutes)
+### Forking & Pull Requests (30 minutes; 01:55-02:25)
 
 #### Terms and Concepts (Forking and Pull Requests)
 
@@ -217,23 +217,7 @@ What if you staged some work and realize you don't want that saved? Or, what if 
 ### Closing
 
 What problems do we anticipate using git / github?
-Review learning objectives:
-
-### Conceptual
-
-- Explain what version control is and why developers use it
-- List the main components of a git repository and how they relate:
-  - repo, working tree, index (aka staging area), commit
-- Describe what a git remote repository is.
-- Differentiate between git as a tool, and github as a service
-- Define and differentiate between forking and cloning
-
-### Mechanical
-- Initialize a local git repository
-- Add and commit changes to a git repository
-- Add a remote repository, and push/pull changes to that remote
-- Use the 'fork, clone, and pull request' model to submit assignments
-- Un-initialize a git repository
+Review learning objectives.
 
 ## Quiz Questions
 
