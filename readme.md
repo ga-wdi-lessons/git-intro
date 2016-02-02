@@ -239,6 +239,19 @@ comfort_level: 4
 completeness: 5
 ```
 
+
+## Resources
+
+* [Interactive Git Cheetsheet](http://ndpsoftware.com/git-cheatsheet.html)
+* [Syncing with Git](https://www.atlassian.com/git/tutorials/syncing/)
+* [Github Guides](https://guides.github.com)
+* [Github Training](https://training.github.com/kit/)
+* [Git Immersion - Interactive Course](http://gitimmersion.com/lab_05.html)
+* [Pro Git](http://git-scm.com/book/en/v2) - An in-depth free PDF book for those wanting to understand git deeper
+* [GitUp - Interactive Commit Visualizer](http://gitup.co)
+* [Practice with Git](https://github.com/grayghostvisuals/practice-git)
+
+
 ## Appendix - Git CLI Commands
 
 ### Creating Repositories
@@ -283,15 +296,3 @@ Once linked, you can just run `git push` to push master branch to master branch
 * Register for a custom domain name (usually $6 - $10 a year), and associate it with your github project site
 
 You'll find instructions that will help at the bottom of the [github pages guide](https://pages.github.com).**
-
-
-## Resources
-
-* [Interactive Git Cheetsheet](http://ndpsoftware.com/git-cheatsheet.html)
-* [Syncing with Git](https://www.atlassian.com/git/tutorials/syncing/)
-* [Github Guides](https://guides.github.com)
-* [Github Training](https://training.github.com/kit/)
-* [Git Immersion - Interactive Course](http://gitimmersion.com/lab_05.html)
-* [Pro Git](http://git-scm.com/book/en/v2) - An in-depth free PDF book for those wanting to understand git deeper
-* [GitUp - Interactive Commit Visualizer](http://gitup.co)
-* [Practice with Git](https://github.com/grayghostvisuals/practice-git)
