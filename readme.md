@@ -114,20 +114,6 @@ they relate.
 
 ![Git Local Diagram](./git-local.jpg)
 
-
-#### (WE DO) Exercise 1: Create a Repository and Committing Locally
-
-Students should:
-
-1. create a new `resume` folder in sandbox directory.
-2. initialize a git repository in the `resume` folder.
-3. make an initial commit with the current version of their code (all files) (remember to ```add``` and then ```commit```)
-4. modify a file (e.g. resume.txt) and create a new commit, with an appropriate message
-5. repeat previous step (committing) but this time, change two files.
-6. view the 'history' by running `git log` to see the log of commits, and what changed
-
-### Break (10 minutes)
-
 #### Git Local Workflow
 
 Developing a project revolves around the basic **edit/stage/commit** pattern.
@@ -141,6 +127,20 @@ The staging area is one of Git's more unique features, and it can take some time
 Instead of committing all of the changes you've made since the last commit, the stage lets you group related changes into highly focused snapshots before actually committing it to the project history. This means you can make all sorts of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the stage and commit them piece-by-piece.
 
 The git commit command commits the staged snapshot to the project history. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicity ask it to. Along with git add, this is one of the most important Git commands.
+
+### Break (10 minutes)
+
+#### (WE DO) Exercise 1: Create a Repository and Committing Locally
+
+Students should:
+
+1. create a new `resume` folder in sandbox directory.
+2. initialize a git repository in the `resume` folder.
+3. make an initial commit with the current version of their code (all files) (remember to ```add``` and then ```commit```)
+4. modify a file (e.g. resume.txt) and create a new commit, with an appropriate message
+5. repeat previous step (committing) but this time, change two files.
+6. view the 'history' by running `git log` to see the log of commits, and what changed
+
 
 ### Remote Repositories and Github (30 minutes)
 
