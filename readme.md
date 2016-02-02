@@ -34,7 +34,7 @@ with other people).
 #### THINK PAIR SHARE (10 Minutes)
 Answer the following questions yourself, then turn to your neighbor and discuss your answers. We will then go around and compare.
 - What does version control mean to you?
-- When have you used a form version control previously?
+- When have you used a form of version control previously?
 - What was frustrating about that experience?
 - How did it work if you were collaborating with other people?
 
