@@ -179,7 +179,7 @@ See diagram of the clone/push/pull process.
 7. make a change locally, commit it, and sync it
 8. open the repo on github, and note that the changes have synced
 
-### Break (5 minutes)
+### Break (10 minutes)
 
 ### Forking & Pull Requests (30 minutes)
 
