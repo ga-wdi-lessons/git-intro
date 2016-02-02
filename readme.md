@@ -26,7 +26,7 @@ changes.
 
 ## Framing
 
-### The Purpose of Version Control (10 minutes)
+### The Purpose of Version Control
 
 Think about how you've managed tracking changes to a file over time (perhaps
 with other people).
@@ -38,6 +38,8 @@ Answer the following questions yourself, then turn to your neighbor and discuss 
 - What was frustrating about that experience?
 - How did it work if you were collaborating with other people?
 
+
+#### Explaining Git (15 Minutes)
 
 **So what is Git, and why does it help us?**
 Above all else, Git is a fast version control system, that allows you to efficiently handle projects large and small.
@@ -225,6 +227,18 @@ What if you staged some work and realize you don't want that saved? Or, what if 
 2. Describe the steps of the process for contributing to open source software on
    Github (the same as our homework submission process).
 
+
+## Homework
+
+### 1. Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions there.
+
+In the comments of the Pull Request description, please include a block like so (numbers out of 5):
+
+```
+comfort_level: 4
+completeness: 5
+```
+
 ## Appendix - Git CLI Commands
 
 ### Creating Repositories
@@ -262,17 +276,6 @@ Once linked, you can just run `git push` to push master branch to master branch
   * If no origin/branch are specified, and no tracking branch is set up, git may tell you to specify
 2. 'git push [remote] [branch]' - push and merge local changes from the current branch to the specified branch on the remote repo and branch specified.
   * Same rules apply as `git pull` above.
-
-## Homework
-
-### 1. Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions there.
-
-In the comments of the Pull Request description, please include a block like so (numbers out of 5):
-
-```
-comfort_level: 4
-completeness: 5
-```
 
 
 ### Optional Bonus assignments:
