@@ -214,24 +214,10 @@ What if you staged some work and realize you don't want that saved? Or, what if 
 
 ### Closing
 
-What problems do we anticipate using git / github?
-Review learning objectives:
-
-### Conceptual
-
-- Explain what version control is and why developers use it
-- List the main components of a git repository and how they relate:
-  - repo, working tree, index (aka staging area), commit
-- Describe what a git remote repository is.
+- Why is version control important for developers?
+- What problems do we anticipate using git / github?
 - Differentiate between git as a tool, and github as a service
 - Define and differentiate between forking and cloning
-
-### Mechanical
-- Initialize a local git repository
-- Add and commit changes to a git repository
-- Add a remote repository, and push/pull changes to that remote
-- Use the 'fork, clone, and pull request' model to submit assignments
-- Un-initialize a git repository
 
 ## Quiz Questions
 
@@ -280,23 +266,8 @@ Once linked, you can just run `git push` to push master branch to master branch
 ## Homework
 
 ### 1. Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions there.
-<!-- ### 1. Personal Resume Page [Part 2 of the HTML Resume](https://github.com/ga-dc/html_resume) -->
 
-### 2. Fork and Clone the Curriculum Repo
-
-Fork the [Curriculum Repo](https://github.com/ga-dc/curriculum) to your personal account. Clone *your fork* to your
-computer in your `~/wdi` folder.
-
-NOTE: If you already have a `curriculum` folder in your `~/wdi` folder, delete or rename it before you clone.
-
-### Submission
-
-File a github issue, on https://github.com/ga-dc/curriculum/issues, with a link to:
-* your personal github pages repo
-* the URL to see your hosted page.
-* a link to the repo you forked
-
-At the *top* of the issue description, please include a block like so (numbers out of 5):
+In the comments of the Pull Request description, please include a block like so (numbers out of 5):
 
 ```
 comfort_level: 4
