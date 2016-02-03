@@ -15,14 +15,12 @@ changes.
   - repo, working tree, index (aka staging area), commit
 - Describe what a git remote repository is.
 - Differentiate between git as a tool, and github as a service
-- Define and differentiate between forking and cloning
 
 ### Mechanical
 - Initialize a local git repository
 - Add and commit changes to a git repository
 - Add a remote repository, and push/pull changes to that remote
 - Use the 'fork, clone, and pull request' model to submit assignments
-- Un-initialize a git repository
 
 ## Framing
 
@@ -39,7 +37,7 @@ Answer the following questions yourself, then turn to your neighbor and discuss 
 - How did it work if you were collaborating with other people?
 
 
-#### Explaining Git (15 Minutes)
+#### Explaining Git (10 Minutes)
 
 **So what is Git, and why does it help us?**
 Above all else, Git is a fast version control system, that allows you to efficiently handle projects large and small.
@@ -71,14 +69,6 @@ can be useful when:
 * reviewing code as a team for correctness or quality/style
 
 Git allows us to easily see these changes (called a `diff`) for any given commit.
-
-**Sharing changes**
-
-Most software is developed on a team. Thus, it's important for us to share our
-changes so that others can incorporate them into the version they are working on.
-
-**Separating features**
-Git allows us to "branch" away from the "master" collection of files to work on separate features. Typically the master will be the collections of files from which your actual deployed app will read. If you want to work on a new feature for your app, but are unsure that it will work, would you risk adding code to that master branch if there is a chance everything crashes? probably not, so instead we branch.  As an example, when Facebook is working on a new feature (think news feed, or that ridiculous trending section), they don't want the site to crash because of an error caused by that new feature.  Therefore, they would likely work on that through another version of their code, and then merge it with the master once everything has been tested and works.
 <!--
 **Collaborating / discussing changes**
 
@@ -126,23 +116,26 @@ The staging area is one of Git's more unique features, and it can take some time
 
 Instead of committing all of the changes you've made since the last commit, the stage lets you group related changes into highly focused snapshots before actually committing it to the project history. This means you can make all sorts of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the stage and commit them piece-by-piece.
 
-The git commit command commits the staged snapshot to the project history. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicity ask it to. Along with git add, this is one of the most important Git commands.
+The git commit command commits the staged snapshot to the project history. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to. Along with git add, this is one of the most important Git commands.
 
 ### Break (10 minutes)
 
 #### (WE DO) Exercise 1: Create a Repository and Committing Locally
 
-Students should:
-
 1. create a new `resume` folder in sandbox directory.
 2. initialize a git repository in the `resume` folder.
+  - ```git init```
 3. make an initial commit with the current version of their code (all files) (remember to ```add``` and then ```commit```)
+
+#### (You DO)
 4. modify a file (e.g. resume.txt) and create a new commit, with an appropriate message
 5. repeat previous step (committing) but this time, change two files.
 6. view the 'history' by running `git log` to see the log of commits, and what changed
 
+** Note: If you've initialized the git repository in your sandbox folder instead of the resume folder, try running ```rm -rf .git```**
 
-### Remote Repositories and Github (30 minutes)
+
+### Remote Repositories and Github (35 minutes)
 
 #### Docs Dive (5 minutes)
 
@@ -172,9 +165,13 @@ See diagram of the clone/push/pull process.
 
 1. make sure you are in the resume directory and you have nothing to commit.
 2. ensure you have at least one commit
-3. create a github repo and follow the steps provided
+3. create a github repo
+  - To create a repo, click on the '+' at the top right of your Github profile
 4. give the repo a name and description, and ensure it's public
-5. add repo as a remote and push to remote
+  - don't worry about the other selections
+5. Follow the steps provided to add repo as a remote and push to remote
+  - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
+  - Is the repository on your LOCAL already existing?
 6. open the repo on github, and explore the code there
 7. make a change locally, commit it, and sync it
 8. open the repo on github, and note that the changes have synced
@@ -193,7 +190,7 @@ to HW submission.
 
 ![Git Process Diagram](./git06.jpg)
 
-![Git Process Diagram](./git.gif)
+<!-- ![Git Process Diagram](./git.gif) -->
 
 <!-- #### Exercise 3: Fork, Clone and create a Pull Request
 Visit the [haiku](https://github.com/ga-dc/haiku) repo and follow the instructions
@@ -211,7 +208,7 @@ What if you staged some work and realize you don't want that saved? Or, what if 
 5. make a new change to your resume.txt file, and this time ```add``` and ```commit``` it
 6. can you still revert with the same command?
 7. try ```git reset head^```
-  * ***note, be VERY careful when reverting! you cannot undo if you go back a commit***
+  * ***note, be VERY careful when reseting! you cannot undo if you go back a commit***
 
 
 ### Closing
