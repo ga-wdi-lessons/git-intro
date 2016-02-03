@@ -92,8 +92,8 @@ concepts of how git works (and associated terms).
 
 #### Terms and Concepts (Core Git)
 
-* **repository** - collection of commits (save points of the working tree)
 * **working tree** - the folder (and it's files and sub-folders, that are in the repository)
+* **repository** - collection of commits (save points of the working tree)
 * **commit** - a snapshot of the working tree at a giving time (along with a message of what changed)
 * **the index** - a staging area where we list changes we want to commit
 * **HEAD** - what is currently checked out
