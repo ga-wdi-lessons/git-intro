@@ -140,7 +140,7 @@ The git commit command commits the staged snapshot to the project history. Commi
 #### Docs Dive (5 minutes)
 
 Students should briefly look over provided reading on [Git Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
-and prepare to discuss key takeaways.
+and prepare to discuss key takeaways (read through pushing remotes).
 
 #### Terms and Concepts (Remotes)
 
