@@ -6,6 +6,9 @@ This lesson aims to teach you both the fundamentals (both conceptual and
 mechanical), of using git, as well as how to use git with Github to share
 changes.
 
+- Git is **awesome**
+- Git is **hard**
+
 ## Learning Objectives
 
 ### Conceptual
