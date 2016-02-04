@@ -14,8 +14,7 @@ changes.
 ### Conceptual
 
 - Explain what version control is and why developers use it
-- List the main components of a git repository and how they relate:
-  - repo, working tree, index (aka staging area), commit
+- Understand the components of a git repository
 - Describe what a git remote repository is.
 - Differentiate between git as a tool, and github as a service
 
@@ -51,8 +50,8 @@ Here are some problems we face as developers, and how git solves them:
 
 Git allows us to make save points at any time. These save points are called
 'commits'. Once a save point is made, it's permanent, and allows us to go back
-to that save point at any time. From there, we can see what the code looked like
-at that point, or even start building off that version.
+to that save point at any time.
+<!-- From there, we can see what the code looked like at that point, or even start building off that version. -->
 
 **Keeping track of what each version 'meant'**
 
