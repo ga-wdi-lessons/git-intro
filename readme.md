@@ -155,13 +155,9 @@ and prepare to discuss key takeaways (read through pushing remotes).
 * **push**   - sending changes to a remote repository and merging them into the specified branch
 * **merge conflict** - when two commits conflict, and thus can't be merged automatically.
 
-See diagram of the clone/push/pull process.
+### Creating your own remote repo
 
-![Git Process Diagram](./git01.jpg)
-![Git Process Diagram](./git02.jpg)
-![Git Process Diagram](./git03.jpg)
-![Git Process Diagram](./git04.jpg)
-
+* Set up push capability from local to remote
 
 #### Exercise 2: Publish to a remote repository on Github
 
@@ -187,9 +183,13 @@ See diagram of the clone/push/pull process.
 * **fork** - make a copy of a repo on github under a different account, used for OSS collaboration
 * **pull request** - a github feature which allows a user to suggest and discuss changes to a repo they have forked
 
-See diagram of the fork/clone/pull request process, and how it relates
+See diagram of the fork/clone/push/pull request process, and how it relates
 to HW submission.
 
+![Git Process Diagram](./git01.jpg)
+![Git Process Diagram](./git02.jpg)
+![Git Process Diagram](./git03.jpg)
+![Git Process Diagram](./git04.jpg)
 ![Git Process Diagram](./git06.jpg)
 
 <!-- ![Git Process Diagram](./git.gif) -->
