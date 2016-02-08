@@ -127,7 +127,8 @@ The git commit command commits the staged snapshot to the project history. Commi
 1. create a new `resume` folder in sandbox directory.
 2. initialize a git repository in the `resume` folder.
   - ```git init```
-3. make an initial commit with the current version of their code (all files) (remember to ```add``` and then ```commit```)
+3. Create a resume.txt file and write anything in it.
+4. make an initial commit with the current version of their code (all files) (remember to ```add``` and then ```commit```)
 
 #### (You DO)
 4. modify a file (e.g. resume.txt) and create a new commit, with an appropriate message
@@ -137,7 +138,7 @@ The git commit command commits the staged snapshot to the project history. Commi
 ** Note: If you've initialized the git repository in your sandbox folder instead of the resume folder, try running ```rm -rf .git```**
 
 
-### Remote Repositories and Github (35 minutes)
+### Remote Repositories and Github (30 minutes)
 
 #### Docs Dive (5 minutes)
 
@@ -155,7 +156,7 @@ and prepare to discuss key takeaways (read through pushing remotes).
 * **push**   - sending changes to a remote repository and merging them into the specified branch
 * **merge conflict** - when two commits conflict, and thus can't be merged automatically.
 
-### Creating your own remote repo
+#### Creating your own remote repo
 
 * Set up push capability from local to remote
 
@@ -176,7 +177,7 @@ and prepare to discuss key takeaways (read through pushing remotes).
 
 ### Break (10 minutes)
 
-### Forking & Pull Requests (30 minutes)
+### Forking & Pull Requests (35 minutes)
 
 #### Terms and Concepts (Forking and Pull Requests)
 
