@@ -159,6 +159,9 @@ and prepare to discuss key takeaways (read through pushing remotes).
 #### Creating your own remote repo
 
 * Set up push capability from local to remote
+* See diagram below
+
+![Git Process Diagram](./git07.jpg)
 
 #### Exercise 2: Publish to a remote repository on Github
 
