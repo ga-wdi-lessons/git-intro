@@ -172,6 +172,7 @@ and prepare to discuss key takeaways (read through pushing remotes).
 4. give the repo a name and description, and ensure it's public
   - don't worry about the other selections
 5. Follow the steps provided to add repo as a remote and push to remote
+  - NOTE: leave out the "-u" in the push command
   - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
   - Is the repository on your LOCAL already existing?
 6. open the repo on github, and explore the code there
