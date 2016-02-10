@@ -106,6 +106,22 @@ they relate.
 
 ![Git Local Diagram](./git-local.jpg)
 
+#### (WE DO) Exercise 1: Create a Repository and Committing Locally
+
+1. create a new `resume` folder in sandbox directory.
+2. initialize a git repository in the `resume` folder.
+  - ```git init```
+3. Create a resume.txt file and write anything in it.
+  - save it!
+4. make an initial commit with the current version of their code (all files) (remember to ```add``` and then ```commit```)
+
+#### (You DO)
+4. modify resume.txt and create a new file (add something to it!). Then create a new commit, with an appropriate message
+5. repeat previous step (committing) but this time, change two files.
+6. view the 'history' by running `git log` to see the log of commits, and what changed
+
+** Note: If you've initialized the git repository in your sandbox folder instead of the resume folder, try running ```rm -rf .git```**
+
 #### Git Local Workflow
 
 Developing a project revolves around the basic **edit/stage/commit** pattern.
@@ -121,22 +137,6 @@ Instead of committing all of the changes you've made since the last commit, the 
 The git commit command commits the staged snapshot to the project history. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to. Along with git add, this is one of the most important Git commands.
 
 ### Break (10 minutes)
-
-#### (WE DO) Exercise 1: Create a Repository and Committing Locally
-
-1. create a new `resume` folder in sandbox directory.
-2. initialize a git repository in the `resume` folder.
-  - ```git init```
-3. Create a resume.txt file and write anything in it.
-4. make an initial commit with the current version of their code (all files) (remember to ```add``` and then ```commit```)
-
-#### (You DO)
-4. modify a file (e.g. resume.txt) and create a new commit, with an appropriate message
-5. repeat previous step (committing) but this time, change two files.
-6. view the 'history' by running `git log` to see the log of commits, and what changed
-
-** Note: If you've initialized the git repository in your sandbox folder instead of the resume folder, try running ```rm -rf .git```**
-
 
 ### Remote Repositories and Github (30 minutes)
 
@@ -216,6 +216,8 @@ What if you staged some work and realize you don't want that saved? Or, what if 
 6. can you still revert with the same command?
 7. try ```git reset head^```
   * ***note, be VERY careful when reseting! you cannot undo if you go back a commit***
+  - this will return the changes you made to be untracked
+8. to completely undo the changes, run ```git checkout -- resume.txt``` after ```git reset head^```
 
 
 ### Closing
