@@ -167,7 +167,7 @@ and prepare to discuss key takeaways (read through pushing remotes).
 * Set up push capability from local to remote
 * See diagram below
 
-![Git Process Diagram](./git07.jpg)
+<!-- ![Git Process Diagram](./git07.jpg) -->
 
 ### Exercise 2: Publish to a remote repository on Github
 
@@ -196,11 +196,11 @@ and prepare to discuss key takeaways (read through pushing remotes).
 See diagram of the fork/clone/push/pull request process, and how it relates
 to HW submission.
 
-![Git Process Diagram](./git01.jpg)
+<!-- ![Git Process Diagram](./git01.jpg)
 ![Git Process Diagram](./git02.jpg)
 ![Git Process Diagram](./git03.jpg)
 ![Git Process Diagram](./git04.jpg)
-![Git Process Diagram](./git06.jpg)
+![Git Process Diagram](./git06.jpg) -->
 
 <!-- ![Git Process Diagram](./git.gif) -->
 
