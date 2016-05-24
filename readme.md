@@ -343,6 +343,9 @@ Once linked, you can just run `git push` to push master branch to master branch
   * Same rules apply as `git pull` above.
 
 
+### [The Homework Submission Process](https://vimeo.com/167925651)
+
+
 ### Optional Bonus assignments:
 * Create a blog site using jekyll (hosted using a separate repo at **your_github_username*.github.io/blog, this is called a 'project' rep)
 * Register for a custom domain name (usually $6 - $10 a year), and associate it with your github project site
