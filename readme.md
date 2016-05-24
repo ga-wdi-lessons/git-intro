@@ -110,6 +110,8 @@ they relate.
   - save it!
 4. Make an initial commit with the current version of their code (all files) (remember to ```add``` and then ```commit```)
 
+[What makes a great commit message?](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+
 #### Exercise 1.5: More Commits / History - You Do (5 minutes)
 
 1. Modify resume.txt and create a new file (add something to it!). Then create a new commit, with an appropriate message
@@ -117,6 +119,21 @@ they relate.
 3. View the 'history' by running `git log` to see the log of commits, and what changed
 
 ** Note: If you've initialized the git repository in your sandbox folder instead of the resume folder, try running ```rm -rf .git```**
+
+How do you know it worked?
+
+```
+$ git log
+```
+
+As your commit history grows more complex, the default output of git log will not be very useful.
+Try this alias I created `gl`:
+
+```
+$ curl http://www.wdidc.org/~jesse/gl >> ~/.bash_profile
+$ source ~/.bash_profile
+$ gl
+```
 
 ### Git Local Workflow
 
@@ -128,7 +145,6 @@ Working on a project w/ git revolves around the basic **edit/stage/commit** patt
 2. Use `git add <file1> <file2>` to add them to the **staging area**.
 3. Use `git commit -m "descriptive message"` to make a **commit** that which is saved in the **repo**.
 4. Lather. Rinse. Repeat.
-
 
 #### Detailed Description
 
@@ -171,6 +187,23 @@ and prepare to discuss key takeaways (read through pushing remotes).
 
 ### Exercise 2: Publish to a remote repository on Github
 
+**But First!**
+
+Make sure you have ssh keys set up with GitHub so you don't have to type
+your password:
+
+```
+ssh -T git@github.com
+```
+
+You should see a response like:
+
+```
+Hi jshawl! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+If you get `Permission Denied`, please reference https://github.com/ga-wdi-lessons/git-ssh
+
 1. Make sure you are in the resume directory and you have nothing to commit.
 2. Ensure you have at least one commit
 3. Create a github repo
@@ -181,7 +214,7 @@ and prepare to discuss key takeaways (read through pushing remotes).
   - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
   - Is the repository on your LOCAL already existing?
 6. Open the repo on github, and explore the code there
-7. Make a change locally, commit it, and sync it
+7. Make a change locally, commit it, and push it
 8. Open the repo on github, and note that the changes have synced
 
 ## Break (10 minutes)
@@ -196,13 +229,13 @@ and prepare to discuss key takeaways (read through pushing remotes).
 See diagram of the fork/clone/push/pull request process, and how it relates
 to HW submission.
 
-<!-- ![Git Process Diagram](./git01.jpg)
+![Git Process Diagram](./git01.jpg)
 ![Git Process Diagram](./git02.jpg)
 ![Git Process Diagram](./git03.jpg)
 ![Git Process Diagram](./git04.jpg)
-![Git Process Diagram](./git06.jpg) -->
+![Git Process Diagram](./git06.jpg)
 
-<!-- ![Git Process Diagram](./git.gif) -->
+![Git Process Diagram](./git.gif)
 
 
 ### Demo
@@ -212,12 +245,12 @@ Demo forking / cloning / fix / PR for [Garnet](github.com/ga-dc/garnet)
 
 ## Bonus Material
 
-### Git SSH
+Anyone missing the git branch `(master)` in their bash prompt?
 
-If we have time, let's go over the [git SSH exercise](https://github.com/ga-wdi-lessons/git-ssh)
+Nearly everything I learned about git came from the Pro Git book - available
+for free online! https://git-scm.com/book/en/v2
 
-
-### Bonus Exercise Exercise 3: Reset your work
+### Bonus Exercise 3: Reset your work
 What if you staged some work and realize you don't want that saved? Or, what if you've gone even further and committed something, but want tor evert back to the last commit?
 
 1. make a few changes to your resume.txt file
