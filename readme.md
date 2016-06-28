@@ -243,15 +243,20 @@ The git commit command commits the staged snapshot to the project history. Commi
 
 ## Remote Repositories and Github
 
-So far we've been doing everything on our own machine, or **locally**
+So far we've been doing everything on our own machine, or **locally**.
 
 ### Terms and Concepts for Remotes
 
 #### Documentation Dive Exercise (11:10 - 11:20)
 
 Documentation takes time to be able to read, it's not easy at first to be able to extract what you need to know. Documentation can vary in readability; some documentation will be particularly difficult to read through for beginners. But with this exercise, we'll get some early practice.
+
 Let's take a brief look over provided reading on [Git Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 and prepare to define the key terms below (read through pushing remotes).
+
+Pair with a partner and spend 5 minutes reading through the documentation above, picking 2 or 3 terms to define. Afterwards, we'll spend 5 minutes discussing our findings.
+
+#### Key Terms to Define
 * **remote**
 * **github**
 * **clone**  
@@ -291,7 +296,7 @@ In this section, we'll learn to push changes made **locally** to our **remote** 
 
 ![Git Process Diagram](/images/git07.jpg)
 
-### Exercise 2: Publish to a remote repository on Github (11:20-11:30)
+### Exercise 2: Publish to a remote repository on Github (11:20-11:40)
 
 The first step is to make sure you have ssh keys set up with GitHub so you don't have to type your password each time you want to push code:
 
@@ -307,7 +312,7 @@ Hi <username>! You've successfully authenticated, but GitHub does not provide sh
 
 If you get `Permission Denied`, please reference https://github.com/ga-wdi-lessons/git-ssh
 
-
+Once you've configured your SSH Keys with Github:
 
 1. Make sure you are in the resume directory and you have nothing to commit.
 2. Ensure you have at least one commit (`git log` to verify)
@@ -322,23 +327,19 @@ If you get `Permission Denied`, please reference https://github.com/ga-wdi-lesso
 7. Make a change locally, commit it, and push it
 8. Open the repo on github, and note that the changes have synced
 
-## Break (10 minutes)
+## Break (11:40-11:50)
 
-## Forking & Pull Requests (35 minutes)
+## Forking & Pull Requests (11:45 - 12:30)
 
 #### Terms and Concepts (Forking and Pull Requests)
 
-* **fork** - make a copy of a repo on github under a different account, used for open-source software (OSS) collaboration
-  * This happens only once
+* **fork** - make a copy of a repo on GitHub under a different account, used for open-source software (OSS) collaboration
+  * **This happens only once**
 * **cloning** - make a copy of a remote repo locally, or on your  machine
-  * This too, happens only once
+  * **This too, happens only once**
 * **pull request** - a github feature which allows a user to suggest and discuss changes to a repo they have forked
 
-
-See diagram of the fork/clone/push/pull request process, and how it relates
-to HW submission.
-
-
+Below is a step by step illustration of how the forking and cloning process works.
 
 ##### 1. A Remote Repo (Our HW in this case)
 ![Git Process Diagram](/images/git01.jpg)
@@ -357,7 +358,9 @@ to HW submission.
 
 ### Demo
 
-Demo forking / cloning / fix / PR for [Garnet](github.com/ga-dc/garnet)
+Next I'll demo this process, by forking GA's classroom management tool, Garnet.
+
+Demo forking / cloning / PR for [Garnet](github.com/ga-dc/garnet)
 
 
 ## Bonus Material
@@ -369,7 +372,7 @@ https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Bash
 Check out the Pro Git book - available for free online! https://git-scm.com/book/en/v2
 
 ### Bonus Exercise 3: Reset your work
-What if you staged some work and realize you don't want that saved? Or, what if you've gone even further and committed something, but want tor evert back to the last commit?
+What if you staged some work and realize you don't want that saved? Or, what if you've gone even further and committed something, but want to revert back to the last commit?
 
 1. make a few changes to your resume.txt file
 2. stage those files, but do NOT commit
