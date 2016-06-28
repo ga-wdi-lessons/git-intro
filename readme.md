@@ -360,7 +360,7 @@ Below is a step by step illustration of how the forking and cloning process work
 
 Next I'll demo this process, by forking GA's classroom management tool, Garnet.
 
-Demo forking / cloning / PR for [Garnet](github.com/ga-dc/garnet)
+Demo forking / cloning / PR for [Garnet](https://github.com/ga-dc/garnet)
 
 
 ## Bonus Material
