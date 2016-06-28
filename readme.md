@@ -61,7 +61,7 @@ Turn to the person next to you to collaborate on responding to the questions bel
 
 #### Think Pair Share (10 min)
 
-Turn to the person next to you and discuss the below questions. After 5 minutes of discussion we'll share answers with the class.
+Turn to the person next to you and discuss the questions below. After 5 minutes of discussion we'll share answers with the class.
 
 - Why might we want to have different versions of a file?
 - What strategies have you used to keep track of changes you've made to a document or file before? If you haven't, brainstorm ways you might keep track of different versions of a file/document.
@@ -204,11 +204,13 @@ $ git log
 
 As your commit history grows more complex, the default output of git log will not be very useful. To improve your `git log` experience, try this alias our instructor Jesse created `gl`:
 
+
 ```
 $ curl http://www.wdidc.org/~jesse/gl >> ~/.bash_profile
 $ source ~/.bash_profile
 $ gl
 ```
+
 ### Break (10 min)
 
 ## *Section Framing*: Local and Remote
@@ -223,7 +225,7 @@ Working on a project w/ git revolves around the basic **edit/stage/commit** patt
 
 1. Edit your files in the **working directory** and save them in your text editor.
 2. Use `git add <file1> <file2>` to add them to the **staging area**.
-3. Use `git commit -m "descriptive message"` to make a **commit** of that which is saved in the **repo**.
+3. Use `git commit -m "descriptive message"` to make a **commit** of that which is staged in the **repo**.
 4. Lather. Rinse. Repeat.
 
 #### Detailed Description
