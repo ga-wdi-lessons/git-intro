@@ -1,6 +1,7 @@
 # Gittin' to know Git
 [Link to git command cheat sheet](./cheatsheet.md)
 [Screencast: The Homework Submission Process](https://vimeo.com/167925651)
+[Screencast: The Homework Submission Process featuring the dulcet tones of Andy Kim's mellifluous voice](https://www.youtube.com/watch?v=rVVpmZ05dbE)
 
 
 ###### Don't worry if you don't git (sorry) everything right away, git can be *tricky*, especially at first! Students typically struggle with git and its mechanics for the first 3 weeks!
