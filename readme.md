@@ -1,5 +1,6 @@
 # Gittin' to know Git
 [Link to git command cheat sheet](./cheatsheet.md)
+[Screencast: The Homework Submission Process](https://vimeo.com/167925651)
 
 
 ###### Don't worry if you don't git (sorry) everything right away, git can be *tricky*, especially at first! Students typically struggle with git and its mechanics for the first 3 weeks!
@@ -464,7 +465,7 @@ Once linked, you can just run `git push` to push master branch to master branch
   * Same rules apply as `git pull` above.
 
 
-### [The Homework Submission Process](https://vimeo.com/167925651)
+### [Screencast: The Homework Submission Process](https://vimeo.com/167925651)
 
 
 ### Optional Bonus assignments:
