@@ -27,7 +27,7 @@ In this lesson, we will learn the basics of using git and see how git is used wi
 
 ## *Lesson Framing* (10:00 - 10:10)
 
-To jump off of the previous command-line interface lesson, let's take a quick look at how our files are organized. This will be important for conceptualize how repositories work.
+To jump off of the previous command-line interface lesson, let's take a quick look at how our files are organized. This will be important for conceptualizing how repositories work.
 
 ### Example of a *File Tree*
 
@@ -240,9 +240,11 @@ This means that `git add` needs to be called every time you alter a file.
 
 The **staging area** is one of Git's more unique features, and it can take some time to wrap your head around it. It helps to think of the **staging area** as a buffer between the working directory and the project history.
 
+> [Why stage files?](http://gitolite.com/uses-of-index.html)
+
 Instead of automatically committing all of the changes you've made since the last commit, the **stage** lets you group *related changes* into highly focused snapshots before actually committing it to the project history. This means you can make all sorts of edits to unrelated files, then go back and split them up into logical commits by adding related changes to the stage and commit them piece-by-piece. If you change 3 files to implement a certain feature, or fix a certain bug, you'd add those 3 files to the staging area `git add <file1> <file2> <file3>`, then a commit `git commit -m "fixes bug <where thing does not work>"` or `git commit -m "adds <some> feature"`
 
-The git commit command commits the staged snapshot to the project history. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to. Along with `git add`, `git commit` is one of the most important Git commands.
+The git commit command commits the staged snapshot to the project history. Committed snapshots can be thought of as versions of a project—Git will never change them unless you explicitly ask it to. Along with `git add`, `git commit` is one of the most important Git commands.
 
 ## Remote Repositories and Github
 
@@ -326,6 +328,7 @@ Once you've configured your SSH Keys with Github:
 5. Follow the steps provided to add repo as a remote and push to remote
   - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
   - Is the repository on your LOCAL already existing?
+  - Read the Fun Manual(RTFM)
 6. Open the repo on github, and explore the code there
 7. Make a change locally, commit it, and push it
 8. Open the repo on github, and note that the changes have synced
