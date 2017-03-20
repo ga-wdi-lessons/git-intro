@@ -1,8 +1,8 @@
-# Gittin' to know Git
+# Intro to Git
 > Quick Links:
 > - [Link to git command cheat sheet](./cheatsheet.md)
 > - [Screencast: The Homework Submission Process](https://vimeo.com/167925651)
-> - [Screencast: The Homework Submission Process featuring the dulcet tones of Andy Kim's mellifluous voice](https://www.youtube.com/watch?v=rVVpmZ05dbE)
+
 
 
 ###### Don't worry if you don't git (sorry) everything right away, git can be *tricky*, especially at first! Students typically struggle with git and its mechanics for the first 3 weeks!
@@ -11,7 +11,7 @@
 
 In this lesson, we will learn the basics of using git and see how git is used with Github, a website for hosting and sharing code.
 
-- Git is a wonderful tool that allows developers (that's us!) to collaborate
+- Git is a wonderful tool that allows developers to collaborate
 - Git has features that give us a safety net for experimenting and writing code, without breaking already working code
 
 ---
@@ -25,7 +25,7 @@ In this lesson, we will learn the basics of using git and see how git is used wi
 
 ---
 
-## *Lesson Framing* (10:00 - 10:10)
+## Framing (10:00 - 10:10)
 
 To jump off of the previous command-line interface lesson, let's take a quick look at how our files are organized. This will be important for conceptualizing how repositories work.
 
@@ -33,20 +33,9 @@ To jump off of the previous command-line interface lesson, let's take a quick lo
 
 Our projects might have a file structure that looks like this:
 
-<details>
-  <summary>
-    <i>Click Triangle to Expand</i>
-    <br>
-    ![Example of file tree](images/top_of_file_tree.jpg)
-  </summary>
+![Example of file tree](images/file_tree_example.png)
 
-  <p>
-    ![Example of file tree](images/file_tree_example.jpg)
-    <p>
-      <i>This is also our </i><b>working tree</b>, <i>the tree of files within the </i><b>working directory</b>.
-    </p>
-  </p>
-</details>
+This is also our **working tree** the tree of files within the working directory.
 
 ### File Tree Relationships & Terminology
 - top_level_folder is our **working directory**
@@ -183,20 +172,21 @@ Let's see some of these mechanics in action. After seeing a demo of the pattern 
 2. Repeat previous step (committing) but this time, change two files.
 3. View the **commit history** by running `git log` to see the log of commits, and what changed
 
-<summary>
-  TROUBLESHOOTING: If you've initialized the git repository in your sandbox
 <details>
-If you've initialized the git repository in your sandbox folder instead of the resume folder, try running:
-  <ul>
-    <li>
-      ```rm -rf .git```
-    </li>
-    <li>
-      MAKE SURE YOU DONT FORGET `.git` IF YOU DO THIS
-    </li>
-  </ul>
+  <summary>
+    TROUBLESHOOTING: If you've initialized the git repository in your sandbox
+  </summary>
+  If you've initialized the git repository in your sandbox folder instead of the resume folder, try running:
+    <ul>
+      <li>
+        ```rm -rf .git```
+      </li>
+      <li>
+        MAKE SURE YOU DONT FORGET `.git` IF YOU DO THIS
+      </li>
+    </ul>
 </details>
-</summary>
+
 
 
 
@@ -262,33 +252,33 @@ and prepare to define the key terms below (read through pushing remotes).
 Pair with a partner and spend 5 minutes reading through the documentation above, picking 2 or 3 terms to define. Afterwards, we'll spend 5 minutes discussing our findings.
 
 #### Key Terms to Define
-* **remote**
-* **github**
-* **clone**  
-* **fetch**
-* **merge**  
-* **pull**   
-* **push**   
-* **merge conflict**
+- **remote**
+- **github**
+- **clone**  
+- **fetch**
+- **merge**  
+- **pull**   
+- **push**   
+- **merge conflict**
 
 <details>
   <summary>
   Answer Key
   </summary>
   <ul>
-    <li> **remote** - another repository that can be synchronized with a remote
+    <li> **remote** - another (non-local) repository that can be synchronized with
     </li>
     <li> **github** - a service that hosts git remote repositories, and provides a web app to interact / collaborate on them
     </li>
-    <li> **clone**  - download an entire remote repository, to be used as a local repository
+    <li> **clone** - download an entire remote repository, to be used as a local repository
     </li>
-    <li> **fetch**  - downloading the set of changes (commits) from a remote repository
+    <li> **fetch** - downloading the set of changes (commits) from a remote repository
     </li>
-    <li> **merge**  - taking two histories (commits), and merge them automatically if possible
+    <li> **merge** - taking two histories (commits), and merge them automatically if possible
     </li>
-    <li> **pull**   - fetching changes and merging them into the current branch (a combo of `git fetch` and `git merge`)
+    <li> **pull** - fetching changes and merging them into the current branch (a combo of `git fetch` and `git merge`)
     </li>
-    <li> **push**   - sending changes to a remote repository and merging them into the specified branch
+    <li> **push** - sending changes to a remote repository and merging them into the specified branch
     </li>
     <li> **merge conflict** - when two commits conflict, and thus can't be merged automatically.
     </li>
@@ -328,7 +318,7 @@ Once you've configured your SSH Keys with Github:
 5. Follow the steps provided to add repo as a remote and push to remote
   - NOTE: there are 3 options for setting up your repo. take a second to think about which commands you need here
   - Is the repository on your LOCAL already existing?
-  - Read the Fun Manual(RTFM)
+  - Read the Fun Manual (RTFM)
 6. Open the repo on github, and explore the code there
 7. Make a change locally, commit it, and push it
 8. Open the repo on github, and note that the changes have synced
@@ -337,15 +327,15 @@ Once you've configured your SSH Keys with Github:
 
 ## Forking & Pull Requests (11:45 - 12:30)
 
-#### Terms and Concepts (Forking and Pull Requests)
+### Terms and Concepts (Forking and Pull Requests)
 
-* **fork** - make a copy of a repo on GitHub under a different account, used for open-source software (OSS) collaboration
-  * **This happens only once**
-* **cloning** - make a copy of a remote repo locally, or on your  machine
-  * **This too, happens only once**
-* **pull request** - a github feature which allows a user to suggest and discuss changes to a repo they have forked
+- **fork** - make a copy of a repo on GitHub under a different account, used for open-source software (OSS) collaboration
+  - **This happens only once**
+- **cloning** - make a copy of a remote repo locally, or on your  machine
+  - **This too, happens only once**
+- **pull request** - a github feature which allows a user to suggest and discuss changes to a repo they have forked
 
-Below is a step by step illustration of how the forking and cloning process works.
+### Below is a step by step illustration of how the forking and cloning process works.
 
 ##### 1. A Remote Repo (Our HW in this case)
 ![Git Process Diagram](/images/git01.jpg)
