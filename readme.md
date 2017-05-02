@@ -106,7 +106,7 @@ Now that we've talked at a high level about what problems git solves and what fe
 
 ### A Metaphor for the Git Repo (10:30-10:40)
 
-After watching[this video](https://www.youtube.com/watch?v=LVAkxmZqNNE), let's think for a second about what the video is made up of and how it relates to the idea of git.
+After watching [this video](https://www.youtube.com/watch?v=LVAkxmZqNNE), let's think for a second about what the video is made up of and how it relates to the idea of git.
 
 ### The Git Repository (or Git Repo)
 
