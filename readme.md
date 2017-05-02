@@ -35,7 +35,7 @@ Our projects might have a file structure that looks like this:
 
 ![Example of file tree](images/file_tree_example.png)
 
-This is also our **working tree** the tree of files within the working directory.
+This is also our **working tree**-- the tree of files within the working directory.
 
 ### File Tree Relationships & Terminology
 - top_level_folder is our **working directory**
@@ -49,11 +49,11 @@ Simply put, version control is a way of *tracking changes* made to a file or gro
 
 It's very likely that each of us has tried to keep track of changes made to a file by creating different versions of that file. This however can be messy or complicated.
 
-Let's look at some questions that hint at potential complications of having multiple or many versions of a file. Turn to the person next to you to collaborate on responding to the questions below. We'll discuss for 5 minutes and then share our responses.
+Let's look at some questions that hint at potential complications of having multiple or many versions of a file.
 
 #### Think Pair Share (10:10-10:20)
 
-Turn to the person next to you and discuss the questions below. After 5 minutes of discussion we'll share answers with the class.
+Turn to the person next to you and discuss the questions below. After 10 minutes of discussion and writing your responses as a comment on [this issue](https://github.com/ga-wdi-lessons/git-intro/issues/14), we'll go over responses as a class.
 
 - Why might we want to have different versions of a file?
 - What strategies have you used to keep track of changes you've made to a document or file before? If you haven't, brainstorm ways you might keep track of different versions of a file/document.
@@ -106,21 +106,15 @@ Now that we've talked at a high level about what problems git solves and what fe
 
 ### A Metaphor for the Git Repo (10:30-10:40)
 
-https://www.youtube.com/watch?v=LVAkxmZqNNE
-
-After watching the video, let's think for a second about what the video is made up of.
-
-### Relating this to the repo
-
-Instead of a series of images of some dude's face, with ***git***, we're taking snapshots of a file or files used in a project. Together, all these snapshots together are stored in our **repo**. Not only is it like a filing-cabinet, but it can travel backwards or forwards in time and store these snapshots as **commits**.
+After watching[this video](https://www.youtube.com/watch?v=LVAkxmZqNNE), let's think for a second about what the video is made up of and how it relates to the idea of git.
 
 ### The Git Repository (or Git Repo)
 
-A ***repository*** is like a special kind of filing cabinet that stores a bunch of snapshots of a project taken at different points the project's development. It is made out of **commits**, which are snapshots of a file tree, as the file tree changes over time.
+A ***repository*** is like a special kind of filing cabinet that stores a bunch of snapshots of a project taken at different points the project's development. It is made out of **commits**, which are snapshots of a file tree, as the file tree changes over time. More specifically and technically, a repository is a data structure, not to be confused with a working directory, that stores information on changes in files. 
 
 Repos are also highly 'aware' of changes made within them; it can detect when files have been added or changed.
 
-We're used to thinking about files stored on the computer in terms of files & folders. Our projects, and actually all files on a computer are contained in structures called ***file trees***.
+We're used to thinking about files stored on the computer in terms of files and folders. Our projects, and actually all files on a computer are contained in structures called ***file trees***.
 
 
   - What changes are our **repos** tracking?
@@ -137,7 +131,7 @@ When we create save-point or a ***commit***, we're saving our project's **file t
 #### Terminology
 
 * **commit** - a snapshot of the working tree at a given time (along with a message explaining what changed)
-* **the index** - also called the staging area; where we add changes we to a commit
+* **the index** - also called the staging area; where we add changes we want committed to the git repository
 * **HEAD** - what is currently "checked out" in the repo
 * **status** - what files have changed, and what state they are in.
   * try typing `git status` within a directory containing a repository
@@ -149,7 +143,7 @@ When we create save-point or a ***commit***, we're saving our project's **file t
 - The staging area is where we add files to be committed
   - `git add <filename>`
 - After we have added our file(s) to the staging area, we can commit them with `git commit -m "<commit message>"` This is the step that actually creates the save-point or **commit**
-- If I pick out a random photo from the stack (above the word "REPO"), this is like the **HEAD** checking out that specific snapshot or commit. If we check out a previous commit, we are moving the **HEAD** to that commit. This also happens when we check out a **branch**, which we will cover in the follow-up mini-lesson.
+-  If we check out a previous commit, we are moving the **HEAD** to that commit. This also happens when we check out a **branch**, which we will cover in a follow-up lesson.
 
 Let's see some of these mechanics in action. After seeing a demo of the pattern of adding a file and committing (`git add`, `git commit`), we'll jump into a short exercise.
 
@@ -179,10 +173,10 @@ Let's see some of these mechanics in action. After seeing a demo of the pattern 
   If you've initialized the git repository in your sandbox folder instead of the resume folder, try running:
     <ul>
       <li>
-        ```rm -rf .git```
+        "rm -rf .git"
       </li>
       <li>
-        MAKE SURE YOU DONT FORGET `.git` IF YOU DO THIS
+        MAKE SURE YOU DONT FORGET ".git" IF YOU DO THIS
       </li>
     </ul>
 </details>
@@ -196,7 +190,7 @@ Let's see some of these mechanics in action. After seeing a demo of the pattern 
 $ git log
 ```
 
-As your commit history grows more complex, the default output of git log will not be very useful. To improve your `git log` experience, try this alias our instructor Jesse created `gl`:
+As your commit history grows more complex, the default output of git log will not be very useful. To improve your `git log` experience, try this alias our former instructor Jesse created `gl`:
 
 
 ```
@@ -207,13 +201,13 @@ $ gl
 
 ### Break (10 min)
 
-## *Section II Framing*: Local and Remote (11:00-11:10)
+## Section II Framing: Local and Remote (11:00-11:10)
 
-In the last exercise, we were working locally, on files stored our harddrives. Very often, we are going to want to push the changes we have made to a remote repo, for example, when we submit WDI homework or want to share our code with our colleagues. We're going to take an in-depth look at local and remote workflows.
+In the last exercise, we were working locally, on files stored our hard drives. Very often, we are going to want to push the changes we have made to a remote repo. For example, when we submit WDI homework or want to share our code with our colleagues. We're going to take an in-depth look at local and remote workflows.
 
 ### Git Local Workflow
 
-Working on a project w/ git revolves around the basic **edit/stage/commit** pattern.
+Working on a project with git revolves around the basic **edit/stage/commit** pattern.
 
 #### Summary
 
@@ -249,7 +243,7 @@ Documentation takes time to be able to read, it's not easy at first to be able t
 Let's take a brief look over provided reading on [Git Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 and prepare to define the key terms below (read through pushing remotes).
 
-Pair with a partner and spend 5 minutes reading through the documentation above, picking 2 or 3 terms to define. Afterwards, we'll spend 5 minutes discussing our findings.
+Pair with a partner and spend 10 minutes reading through the documentation linked above and jotting down notes on the terms. Afterwards, we'll spend a few minutes discussing our findings.
 
 #### Key Terms to Define
 - **remote**
@@ -266,21 +260,21 @@ Pair with a partner and spend 5 minutes reading through the documentation above,
   Answer Key
   </summary>
   <ul>
-    <li> **remote** - another (non-local) repository that can be synchronized with
+    <li> remote - another (non-local) repository that can be synchronized with your local one
     </li>
-    <li> **github** - a service that hosts git remote repositories, and provides a web app to interact / collaborate on them
+    <li> Github - a service that hosts git remote repositories, and provides a web app to interact / collaborate on them
     </li>
-    <li> **clone** - download an entire remote repository, to be used as a local repository
+    <li> clone - download an entire remote repository, to be used as a local repository
     </li>
-    <li> **fetch** - downloading the set of changes (commits) from a remote repository
+    <li> fetch - downloading the set of changes (commits) from a remote repository
     </li>
-    <li> **merge** - taking two histories (commits), and merge them automatically if possible
+    <li> merge - taking two histories (commits), and merge them automatically if possible
     </li>
-    <li> **pull** - fetching changes and merging them into the current branch (a combo of `git fetch` and `git merge`)
+    <li> pull - fetching changes and merging them into the current branch (a combo of `git fetch` and `git merge`)
     </li>
-    <li> **push** - sending changes to a remote repository and merging them into the specified branch
+    <li> push - sending changes to a remote repository and merging them into the specified branch
     </li>
-    <li> **merge conflict** - when two commits conflict, and thus can't be merged automatically.
+    <li> merge conflict - when two commits conflict, and thus can't be merged automatically.
     </li>
   </ul>
 </details>
@@ -293,7 +287,7 @@ In this section, we'll learn to push changes made **locally** to our **remote** 
 
 ### Exercise 2: Publish to a remote repository on Github (11:20-11:40)
 
-The first step is to make sure you have ssh keys set up with GitHub so you don't have to type your password each time you want to push code:
+The first step is to make sure you have SSH keys set up with GitHub so you don't have to type your password each time you want to push code. Generally speaking, SSH keys allows you to connect to a server without remembering a password.
 
 ```
 ssh -T git@github.com
@@ -305,7 +299,7 @@ You should see a response like:
 Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-If you get `Permission Denied`, please reference https://github.com/ga-wdi-lessons/git-ssh
+If you get `Permission Denied`, please reference [this lesson](https://github.com/ga-wdi-lessons/git-ssh).
 
 Once you've configured your SSH Keys with Github:
 
